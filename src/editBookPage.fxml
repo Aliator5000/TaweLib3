@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditBookPageController">
+   <children>
+      <VBox layoutX="290.0" layoutY="100.0" prefHeight="205.0" prefWidth="220.0" spacing="20.0">
+         <children>
+            <TextField fx:id="titleField" promptText="Title" />
+            <TextField fx:id="yearField" promptText="Year" />
+            <TextField fx:id="authorField" promptText="Author" />
+            <TextField fx:id="publisherField" promptText="Publisher" />
+            <Button mnemonicParsing="false" onAction="#confirmButtonHandler" text="Confirm" />
+         </children>
+      </VBox>
+      <ListView fx:id="bookListView" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane vgap="20" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPageController">
+    <padding><Insets bottom="40.0" left="100.0" right="40.0" top="50.0" /></padding>
+    <ComboBox fx:id="userComboBox" minHeight="20" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Librarian" />
+                <String fx:value="Customer" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <TextField fx:id="username" minHeight="30" minWidth="300" promptText="Username" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <HBox spacing="20" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="loginButton" minHeight="20" minWidth="150" onMouseClicked="#loginButtonHandler" text="Login" />
+        <Button minHeight="20" minWidth="150" text="Forgot Password" />
+    </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <children>
+         <Label prefHeight="155.0" prefWidth="198.0" text="Tawe Lib">
+            <font>
+               <Font name="Arial Bold" size="42.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="https://www.google.co.uk/url?sa=i&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjS0pGRtIffAhUC0BoKHd9GBu4QjRx6BAgBEAU&amp;url=https%3A%2F%2Fwww.swansea.ac.uk%2F&amp;psig=AOvVaw3YYtgWj7mno6MKGMRVRT47&amp;ust=1544055235750253" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
